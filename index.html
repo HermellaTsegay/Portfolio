@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hermela Tsegay — Portfolio</title>
+  <meta name="description" content="Portfolio of Hermela Tsegay" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--  NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span>Hermela Tsegay</span>
+      </div>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a class="button" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!--  HERO -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill">✨ Software Designer & Developer</span>
+        <h1 class="title">
+          Hi, I’m <span style="color:var(--accent)">Hermela Tsegay</span>. 
+          I build modern, reliable, and accessible web applications.
+        </h1>
+        <p class="subtitle">
+          I love playful UI, soft gradients, and clean code. 
+          Below are a few projects and snippets that showcase my style and craft.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn secondary" href="mailto:you@example.com">Email Me</a>
+        </div>
+      </div>
+  
+      <div class="hero-card">
+        <img src="images/Profile.svg" 
+             alt="Hermela Tsegay profile picture" 
+             class="profile-pic">
+      </div>
+  </header>
+  
+
+    <!--  PROJECTS  -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A selection of sweet and functional builds.</p>
+
+        <div class="grid">
+            
+            <!-- BudgetWisely -->
+            <article class="card">
+              <div class="thumb" style="background-image:url('images/BudgetWisely.svg'); background-size:cover; background-position:center;" aria-hidden="true"></div>
+              <h3>BudgetWisely</h3>
+              <p class="muted">Track expenses and balances with a simple, friendly UI.</p>
+              <div class="tags">
+                <span class="tag">JavaScript</span><span class="tag">React</span>
+              </div>
+              <p>
+                <a href="https://68c3310f546eaf5387bbf802--effervescent-mermaid-c0520f.netlify.app/" target="_blank" rel="noopener">Live demo →</a>
+                &nbsp; · &nbsp;
+                <a href="https://github.com/HermellaTsegay/BudgetWisely/blob/master/src/App.js" target="_blank" rel="noopener">Code ↗</a>
+              </p>
+            </article>
+          
+           <!-- Discord_Ec2_Bot  -->
+            <article class="card">
+              <div class="thumb" style="background-image:url('images/discord-ec2-bot.png'); background-size:cover; background-position:center;" aria-hidden="true"></div>
+              <h3>Discord EC2 Bot</h3>
+              <p class="muted">A Discord bot that replies in chat and returns AWS EC2 metadata.</p>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Discord.py</span><span class="tag">AWS</span>
+              </div>
+              <p>
+                <a href="https://github.com/HermellaTsegay/Discord_Ec2_Bot/blob/main/heyabot.py" target="_blank" rel="noopener">Code ↗</a>
+              </p>
+            </article>
+          </div>
+          
+      </div>
+    </section>
+
+    <!-- ABOUT & CONTACT  -->
+    <section id="about">
+      <div class="container row">
+        <div class="card">
+          <h2 class="section-title">About Me</h2>
+          <p class="muted">
+            I’m a Software Engineer with internship experience at Amazon, skilled in React, AWS, and modern frameworks. 
+            I focus on building scalable, user-focused applications that are efficient, accessible, and reliable.
+          </p>
+          <p class="muted">
+            When I’m not coding, I enjoy going on hikes, discovering local food spots, and finding creative inspiration in everyday life.
+          </p>
+        </div>
+
+        <div id="contact" class="card">
+          <h2 class="section-title">Contact </h2>
+          <p><strong>Email:</strong> <a href="mailto:you@example.com">hermelatsegaypass@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hermela-tsegay" target="_blank" rel="noopener">linkedin.com/in/hermela-tsegay</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/HermellaTsegay" target="_blank" rel="noopener">github.com/HermellaTsegay</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+      <div class="container">
+        © <span id="year"></span> Hermela Tsegay 
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
